@@ -1,13 +1,4 @@
-/*Cole Proffitt
-Due: 3/28/17
-Box.java
-Description: This add the length accessor and mutator
-to the Rectangle class to
-then find the surface area of the box using the findAreaL method.
-Once that is 
-established the string to print out you box objects is put in the toString 
-method as a return value.
-*/
+
 package testbox;
 public class Box extends Rectangle {
     private double length;
