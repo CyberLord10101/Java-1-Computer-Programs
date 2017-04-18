@@ -1,11 +1,4 @@
-/*
-Cole Proffitt
-TestDate.java
-Lab #8A 
-Due: 03/09/17
-Description: This program used JOptionPane to prompt the user to enter a date a then
-checks to see if it is valid.
-*/
+
 import javax.swing.JOptionPane;
 
 public class TestDate{
