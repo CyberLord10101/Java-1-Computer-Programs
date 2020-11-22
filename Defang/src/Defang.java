@@ -1,5 +1,3 @@
-package com.company;
-
 public class Defang {
 
     public static void main(String[] args) {
