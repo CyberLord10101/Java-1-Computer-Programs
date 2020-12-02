@@ -147,12 +147,12 @@ public class Survey extends JFrame implements ActionListener{
 
     }
     public String getParty(){
-        if(demCB.isSelected()){
-            return "Democrat";
+        if(rebCB.isSelected() && demCB.isSelected()){
+            return "Republican and Democrat = Independent";
         }else if(rebCB.isSelected()){
             return "Republican";
-        }else if(rebCB.isSelected() && demCB.isSelected()){
-            return "Republican & Democrat means your Independent";
+        }else if(demCB.isSelected()){
+            return "Democrat";
         }else{
             return "Please give an input for your party";
         }
