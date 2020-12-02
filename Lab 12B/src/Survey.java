@@ -134,7 +134,7 @@ public class Survey extends JFrame implements ActionListener{
     public String toString(){
 
 
-        return String.format("Party: %s , President: %s , Comment: %s ",getParty(),getPres(),"what" );
+        return String.format("Party: %s , President: %s , Comment: %s ",getParty(),getPres(),getComment() );
     }
 
     public static void main(String[] args) {
@@ -168,8 +168,7 @@ public class Survey extends JFrame implements ActionListener{
         }
     }
     public String getComment(){
-
-        return null;
+        return jta1.getText().trim() ;
     }
 
 }
