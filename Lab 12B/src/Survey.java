@@ -125,15 +125,17 @@ public class Survey extends JFrame implements ActionListener{
         }else if(e.getSource() == previous) {
             c.previous(cardPanel);
         }else if(e.getActionCommand() == "Submit"){
+            getParty();
             System.out.println(this);
         }
+
 
     }
     @Override
     public String toString(){
 
 
-        return String.format("Party: %s , President %s , Comment: %s ",demCB.getName(),"Hel","what" );
+        return String.format("Party: %s , President %s , Comment: %s ",getParty(),"Hel","what" );
     }
 
     public static void main(String[] args) {
@@ -142,7 +144,18 @@ public class Survey extends JFrame implements ActionListener{
         s.setLocationRelativeTo(null);
         s.setSize(300,300);
         s.setVisible(true);
-        System.out.println(cardPanel.toString());
+
+    }
+    public String getParty(){
+        if(demCB.isSelected()){
+            return "Democrat";
+        }else if(rebCB.isSelected()){
+            return "Republican";
+        }else if(rebCB.isSelected() && demCB.isSelected()){
+            return "Republican & Democrat means your Independent";
+        }else{
+            return "Please give an input for your party";
+        }
     }
 
 }

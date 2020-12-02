@@ -256,7 +256,7 @@ public class Space extends JPanel {
             }
             found = mEnemy[i][j].isAlive()
                     || lEnemy[i][j].isAlive()
-                    || tEnemy[i].isAlive();
+                    || tEnemy[j].isAlive();
 
             j++;
         } while (!found);
