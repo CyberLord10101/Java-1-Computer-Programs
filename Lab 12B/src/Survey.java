@@ -125,7 +125,6 @@ public class Survey extends JFrame implements ActionListener{
         }else if(e.getSource() == previous) {
             c.previous(cardPanel);
         }else if(e.getActionCommand() == "Submit"){
-            getParty();
             System.out.println(this);
         }
 
@@ -135,7 +134,7 @@ public class Survey extends JFrame implements ActionListener{
     public String toString(){
 
 
-        return String.format("Party: %s , President %s , Comment: %s ",getParty(),"Hel","what" );
+        return String.format("Party: %s , President: %s , Comment: %s ",getParty(),getPres(),"what" );
     }
 
     public static void main(String[] args) {
@@ -156,6 +155,21 @@ public class Survey extends JFrame implements ActionListener{
         }else{
             return "Please give an input for your party";
         }
+    }
+    public String getPres(){
+        if(rbD.isSelected()){
+            return "Donald Trump";
+        }else if(rbB.isSelected()){
+            return "Joe Biden";
+        }else if(rbJ.isSelected()){
+            return "Bernie Sanders";
+        }else {
+            return "U crazy put a pres dog";
+        }
+    }
+    public String getComment(){
+
+        return null;
     }
 
 }
