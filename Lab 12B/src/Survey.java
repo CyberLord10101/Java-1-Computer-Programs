@@ -15,6 +15,7 @@ public class Survey extends JFrame implements ActionListener{
     private ButtonGroup bg;
     private CardLayout c;
     private JLabel jl;
+    private Icon[] icons;
 
 
     public Survey(){
@@ -30,7 +31,6 @@ public class Survey extends JFrame implements ActionListener{
         
         //Adds five different panels with there own layouts
         first = new JPanel();
-        first.setName("Wow");
         first.setLayout(new GridLayout(2,1));
 
         second = new JPanel();
@@ -89,9 +89,9 @@ public class Survey extends JFrame implements ActionListener{
 
         jl = new JLabel("Comments:");
 
-        String[] names = {"Hey","You"};
+        icons = new Icon[]{new ImageIcon(this.getClass().getResource("icons8-java-bean-24.png")), new ImageIcon(this.getClass().getResource("icons8-super-mario-80.png")), new ImageIcon(this.getClass().getResource("icons8-toucan-32.png"))};
         //Creates a combo box
-        comboBox = new JComboBox(names);
+        comboBox = new JComboBox(icons);
 
 
         next.addActionListener(this);
@@ -127,14 +127,10 @@ public class Survey extends JFrame implements ActionListener{
         }else if(e.getActionCommand() == "Submit"){
             System.out.println(this);
         }
-
-
     }
     @Override
     public String toString(){
-
-
-        return String.format("Party: %s , President: %s , Comment: %s ",getParty(),getPres(),getComment() );
+        return String.format("Party: %s , President: %s , Comment: %s , ImageSelected: %s",getParty(),getPres(),getComment(), getCombo() );
     }
 
     public static void main(String[] args) {
@@ -159,16 +155,27 @@ public class Survey extends JFrame implements ActionListener{
     public String getPres(){
         if(rbD.isSelected()){
             return "Donald Trump";
-        }else if(rbB.isSelected()){
-            return "Joe Biden";
         }else if(rbJ.isSelected()){
+            return "Joe Biden";
+        }else if(rbB.isSelected()){
             return "Bernie Sanders";
         }else {
-            return "U crazy put a pres dog";
+            return "Requires a president";
         }
     }
     public String getComment(){
         return jta1.getText().trim() ;
+    }
+    public String getCombo(){
+        if(comboBox.getSelectedItem() ==icons[0] ) {
+            return "JavaBeans";
+        }else if(comboBox.getSelectedItem() == icons[1]){
+            return "Mario";
+        }else if(comboBox.getSelectedItem() == icons[2]){
+            return "Toucan";
+        }else {
+            return "Please enter an answer";
+        }
     }
 
 }
