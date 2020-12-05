@@ -1,3 +1,5 @@
+package survey;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -88,7 +90,7 @@ public class Survey extends JFrame implements ActionListener{
         jta1.setWrapStyleWord(true);
 
         jl = new JLabel("Comments:");
-
+        Class c = this.getClass();
         icons = new Icon[]{new ImageIcon(this.getClass().getResource("icons8-java-bean-24.png")), new ImageIcon(this.getClass().getResource("icons8-super-mario-80.png")), new ImageIcon(this.getClass().getResource("icons8-toucan-32.png"))};
         //Creates a combo box
         comboBox = new JComboBox(icons);
