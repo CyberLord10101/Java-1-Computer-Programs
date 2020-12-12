@@ -141,7 +141,6 @@ public class Survey extends JFrame implements ActionListener{
         s.setLocationRelativeTo(null);
         s.setSize(300,300);
         s.setVisible(true);
-
     }
     public String getParty(){
         if(rebCB.isSelected() && demCB.isSelected()){
