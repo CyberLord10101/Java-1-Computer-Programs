@@ -8,8 +8,8 @@ public class NormalMember extends Member{
         super(name, memberID, memberSince);
         System.out.println("Child constructor with 3 parameters");
     }
-
-    public static void main(String[] args) {
-        NormalMember myChildMember = new NormalMember("James", 1, 2010);
+    @Override
+    public void calculateAnnualFee(){
+        annualFee = (1-0.01*getDiscount())*(100 + 12*30);
     }
 }

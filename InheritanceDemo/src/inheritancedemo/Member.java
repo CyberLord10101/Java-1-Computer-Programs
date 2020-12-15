@@ -2,7 +2,7 @@ package inheritancedemo;
 
 import java.util.Scanner;
 
-public class Member {
+abstract public class Member {
     public String welcome = "Welcome to ABC fitness";
     protected double annualFee;
     private String name;
@@ -38,11 +38,9 @@ public class Member {
         System.out.println("Member Name: " + name);
         System.out.println("Member ID: " + memberID);
         System.out.println("Member Since: " + memberSince);
-        System.out.println("Annual Fee: " + annualFee);
+        System.out.println("Annual Fee: " + annualFee + "\n");
     }
-    public void calculateAnnualFee(){
-        annualFee = 0;
-    }
+    abstract public void calculateAnnualFee();
 
 
 }
