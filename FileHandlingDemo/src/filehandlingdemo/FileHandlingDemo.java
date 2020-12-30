@@ -6,10 +6,10 @@ public class FileHandlingDemo {
     public static void main(String[] args) {
         //This is how to write to a file
         String text = "Hello World";
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter("myFile2.txt",true))){
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("myFile2.txt", true))) {
             writer.write(text);
             writer.newLine();
-        }catch (IOException e ){
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
         //How to rename files **Warning goes to src not inside the package
@@ -18,9 +18,8 @@ public class FileHandlingDemo {
         f.renameTo(nf);
         //This is
 
-        }
-        public void addB(int a, int b){
-            int out = a + b;
+    }
+
 
         //This is the new way of reading a file
         /*
@@ -59,5 +58,5 @@ public class FileHandlingDemo {
             }
         }
         */
-    }
+
 }
