@@ -16,7 +16,11 @@ public class FileHandlingDemo {
         File f = new File("myFile2.txt");
         File nf = new File("myNewFile.txt");
         f.renameTo(nf);
+        //This is
 
+        }
+        public void addB(int a, int b){
+            int out = a + b;
 
         //This is the new way of reading a file
         /*
