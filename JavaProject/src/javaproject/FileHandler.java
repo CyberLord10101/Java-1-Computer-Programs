@@ -10,7 +10,7 @@ public class FileHandler {
         String[] lineSplit;
         Member mem;
 
-        try(BufferedReader reader = new BufferedReader(new FileReader("members.csv"))){
+        try(BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\colep\\IdeaProjects\\JavaProject\\src\\javaproject\\members.csv"))){
             lineRead = reader.readLine();
             while(lineRead != null){
                 lineSplit = lineRead.split(", ");
@@ -30,7 +30,7 @@ public class FileHandler {
         return m;
     }
     public void appendFile(String mem){
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter("members.csv",true))){
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\colep\\IdeaProjects\\JavaProject\\src\\javaproject\\members.csv",true))){
             writer.write(mem + "\n");
         }catch(IOException e){
             System.out.println(e.getMessage());
@@ -38,7 +38,7 @@ public class FileHandler {
     }
     public void overwriteFile(LinkedList<Member> m){
         String s;
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter("members.temp", false))){
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\colep\\IdeaProjects\\JavaProject\\src\\javaproject\\members.temp", false))){
             for(int i = 0; i < m.size(); i++){
                 s = m.get(i).toString();
                 writer.write(s + "\n");
@@ -48,8 +48,8 @@ public class FileHandler {
         }
 
         try{
-            File f = new File("members.csv");
-            File tf = new File("members.temp");
+            File f = new File("C:\\Users\\colep\\IdeaProjects\\JavaProject\\src\\javaproject\\members.csv");
+            File tf = new File("C:\\Users\\colep\\IdeaProjects\\JavaProject\\src\\javaproject\\members.temp");
 
             f.delete();
             tf.renameTo(f);
