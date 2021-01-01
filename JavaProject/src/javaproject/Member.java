@@ -41,6 +41,6 @@ public class Member {
     }
     @Override
     public String toString(){
-        return String.format("%c, %d, %s, %f", memberType,memberID,name,fees);
+        return String.format("%c, %d, %s, %.2f", memberType,memberID,name,fees);
     }
 }
