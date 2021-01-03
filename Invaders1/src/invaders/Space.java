@@ -255,11 +255,13 @@ public class Space extends JPanel {
         do {
             if (j > COL - 1) {
                 i++;
-            }
-            found = mEnemy[i][j].isAlive()
-                    || lEnemy[i][j].isAlive()
-                    || tEnemy[j].isAlive();
+            }else {
+                found = mEnemy[i][j].isAlive()
+                        || lEnemy[i][j].isAlive()
+                        || tEnemy[j].isAlive();
 
+
+            }
             j++;
         } while (!found);
 

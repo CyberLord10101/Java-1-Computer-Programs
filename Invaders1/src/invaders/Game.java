@@ -17,8 +17,8 @@ import javax.swing.Timer;
  */
 public class Game {
 
-    private int numLives;
-    private int curScore;
+    private static int numLives;
+    private static int curScore;
     private JFrame window;
     private Space screen;
     private Timer aTimer, sTimer, bTimer, baTimer;
