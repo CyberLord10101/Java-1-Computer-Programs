@@ -1,3 +1,5 @@
+package ArcTrig;
+
 import java.util.Scanner;
 
 public class ArcTrig {
@@ -10,7 +12,7 @@ public class ArcTrig {
                 
         while(answer == 'y'){
             System.out.println("Please, enter a degree that you would like to find: ");
-            degree = (myInput.nextDouble())/57.2958;
+            degree = Math.toRadians(myInput.nextDouble());
             sine = Math.asin(degree);
             cosine = Math.acos(degree);
             tangent = Math.atan(degree);
