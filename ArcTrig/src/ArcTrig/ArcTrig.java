@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ArcTrig {
 
-   //Hello Testing the repo Hope this fixes the issue
+   //Hello Testing the repo Hope this fixes the issue broken
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
         char answer = 'y';
