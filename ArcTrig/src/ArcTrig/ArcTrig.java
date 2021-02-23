@@ -22,6 +22,10 @@ public class ArcTrig {
             System.out.println("Would you like to enter another degree: " + answer + " or n?");
             String ansStr = myInput.next();
             answer = ansStr.charAt(0);
+
+            int num = 3;
+            int num1 = 4;
+            System.out.println(num + num1 + " ");
         }
         
     }
