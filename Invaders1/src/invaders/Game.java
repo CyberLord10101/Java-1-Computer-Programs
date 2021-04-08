@@ -37,6 +37,7 @@ public class Game {
         window.setLocationRelativeTo(null);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.addKeyListener(new MoveListener());
+        window.setResizable(false);
 
 
         numLives = 3;

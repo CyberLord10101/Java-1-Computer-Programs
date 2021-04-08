@@ -219,16 +219,17 @@ public class Space extends JPanel {
     }
     //Gets the right most aliens x value
     private int getRightMostAlienXValue() {
-        int index = COL - 1;
+        int index = COL;
         boolean found = false;
         do {
+            index--;
             found = lEnemy[0][index].isAlive()
                     || lEnemy[1][index].isAlive()
                     || mEnemy[0][index].isAlive()
                     || mEnemy[1][index].isAlive()
                     || tEnemy[index].isAlive();
-            index--;
-        } while (!found && index > -1);
+
+        } while (!found && index > 0);
 
         return lEnemy[0][index].getX() + lEnemy[0][index].getWidth();
 
@@ -244,7 +245,7 @@ public class Space extends JPanel {
                     || mEnemy[0][index].isAlive()
                     || mEnemy[1][index].isAlive()
                     || tEnemy[index].isAlive();
-        } while (!found && index <= COL);
+        } while (!found && index < COL - 1);
 
         return lEnemy[0][index].getX() + deltaX;
     }
