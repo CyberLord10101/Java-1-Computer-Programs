@@ -2,131 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59affaaf-6858-4319-a7c5-b9f4f4f27264" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ArcTrig/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcTrig/build/classes/arctrig/ArcTrig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcTrig/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcTrig/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcTrig/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcTrig/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcTrig/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcTrig/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcTrig/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcTrig/src/arctrig/ArcTrig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputeChange.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Animal$Apple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Animal$Chicken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Animal$Elephant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Animal$Fruit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Animal$Orange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Animal$Tiger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Apple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Chicken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Eatable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Elephant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Fruit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Lab10A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Orange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/build/classes/lab10a/Tiger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10A/src/lab10a/Lab10A.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/build/classes/lab10b/Lab10B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/build/classes/lab10b/NewPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/src/lab10b/Lab10B.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10B/src/lab10b/NewPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/build/classes/lab11b/CirclePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/build/classes/lab11b/Lab11B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/build/classes/lab11b/OvalPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/build/classes/lab11b/RectanglePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab11B/src/lab11b/Lab11B.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/build/classes/Shapes/CirclePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/build/classes/Shapes/OvalPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/build/classes/Shapes/RectanglePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/build/classes/Shapes/Shapes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Polygon/src/Shapes/Shapes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/build/classes/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/build/classes/TestRectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/build/classes/rectangletest/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/src/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RectangleTest/src/TestRectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesCommision/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesCommision/build/classes/salescommision/SalesCommision.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesCommision/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesCommision/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesCommision/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesCommision/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesCommision/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesCommision/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesCommision/src/salescommision/SalesCommision.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SciSurv/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SciSurv/build/classes/scisurv/SciSurv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SciSurv/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SciSurv/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SciSurv/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SciSurv/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SciSurv/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SciSurv/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SciSurv/src/scisurv/SciSurv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/build/classes/testbox/Box.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/build/classes/testbox/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/build/classes/testbox/TestBox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/src/testbox/Box.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/src/testbox/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestBox_1/src/testbox/TestBox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestDate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vowels.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wholepart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +29,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/git/SpaceInvRepo/.idea" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Invaders1" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -165,26 +44,20 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="116" y="195" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1604993771899">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="116" y="195" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1604993771899" />
-    <state x="168" y="310" width="433" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604993775333">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="168" y="310" width="433" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1604993775333" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1604994233994">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604994233994" />
-    <state x="572" y="115" key="RollbackChangesDialog" timestamp="1604993951038">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="572" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604993951038" />
-    <state x="360" y="33" key="new project wizard" timestamp="1604993328594">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="360" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604993328594" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Java-1HW" />
+    </ignored-roots>
   </component>
 </project>

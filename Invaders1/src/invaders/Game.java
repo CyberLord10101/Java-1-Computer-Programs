@@ -31,7 +31,7 @@ public class Game {
 
     public Game() {
 
-        //Creat the window and other stuff
+        //Create the window and other stuff
         window = new JFrame("Space invaders v1.0");
         window.setSize(800, 800);
         window.setLocationRelativeTo(null);
@@ -54,7 +54,7 @@ public class Game {
         window.add(screen);
         window.setVisible(true);
 
-        //poulate the screen
+        //populate the screen
         screen.init();
         aTimer.start();
         sTimer.start();

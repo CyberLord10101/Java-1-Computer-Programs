@@ -40,7 +40,7 @@ public class Space extends JPanel {
         tEnemy = new TopAlien[COL];
         mEnemy = new MidAlien[NUM_DUP_ROW][COL];
 
-        //bEnemy = new BonusAlien(200, 50, 50);
+        bEnemy = new BonusAlien(200, 50, 50);
     }
     //Test the bounds for the aliens 
     public void init() {
@@ -190,6 +190,8 @@ public class Space extends JPanel {
             la.translate(deltaX, 0);
         }
 
+
+
         if (getRightMostAlienXValue() >= getWidth()
                 || getLeftMostAlienXValue() <= 0) {
             //change direction and drop down
@@ -253,7 +255,7 @@ public class Space extends JPanel {
         boolean found = false;
 
         do {
-            if (j > COL - 1) {
+            if (j > COL- 1) {
                 i++;
             } else {
                 found = mEnemy[i][j].isAlive()
