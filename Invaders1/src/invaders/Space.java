@@ -141,7 +141,7 @@ public class Space extends JPanel {
             g2.drawString(as1.getIterator(), 330, 340);
 
         } 
-        if (getBottomMostAlienYValue() == true) {
+        if (getBottomMostAlienYValue()) {
             String s2 = new String("You Lose");
             Font serif3 = new Font("Serif", Font.PLAIN, 30);
             AttributedString as2 = new AttributedString(s2);
@@ -217,16 +217,16 @@ public class Space extends JPanel {
     }
     //Gets the right most aliens x value
     private int getRightMostAlienXValue() {
-        int index = COL;
+        int index = COL - 1;
         boolean found = false;
         do {
-            index--;
             found = lEnemy[0][index].isAlive()
                     || lEnemy[1][index].isAlive()
                     || mEnemy[0][index].isAlive()
                     || mEnemy[1][index].isAlive()
                     || tEnemy[index].isAlive();
-        } while (!found && index >= 0);
+            index--;
+        } while (!found && index > -1);
 
         return lEnemy[0][index].getX() + lEnemy[0][index].getWidth();
 
@@ -255,23 +255,23 @@ public class Space extends JPanel {
         do {
             if (j > COL - 1) {
                 i++;
-            }else {
+            } else {
                 found = mEnemy[i][j].isAlive()
                         || lEnemy[i][j].isAlive()
                         || tEnemy[j].isAlive();
             }
-            j++;
-        } while (!found);
 
-        if (lEnemy[i][j].isAlive() && lEnemy[i][j].getY() >= 600) {
-            defeat = true;
-        }
-        else if (mEnemy[i][j].isAlive() && mEnemy[i][j].getY() >= 600) {
-            defeat = true;
-        }
-        else if (tEnemy[i].isAlive() && tEnemy[i].getY() >= 600) {
-            defeat = true;
-        }
+
+
+            if (lEnemy[i][j].isAlive() && lEnemy[i][j].getY() >= 600) {
+                defeat = true;
+            } else if (mEnemy[i][j].isAlive() && mEnemy[i][j].getY() >= 600) {
+                defeat = true;
+            } else if (tEnemy[j].isAlive() && tEnemy[j].getY() >= 600) {
+                defeat = true;
+            }
+            j++;
+        } while (!found && j < 11 && i < 2);
 
         return defeat;
     }

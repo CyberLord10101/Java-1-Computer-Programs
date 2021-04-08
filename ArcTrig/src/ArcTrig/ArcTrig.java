@@ -23,7 +23,7 @@ public class ArcTrig {
             String ansStr = myInput.next();
             answer = ansStr.charAt(0);
 
-            
+
         }
         
     }

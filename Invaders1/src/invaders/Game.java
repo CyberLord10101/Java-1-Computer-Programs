@@ -37,6 +37,8 @@ public class Game {
         window.setLocationRelativeTo(null);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.addKeyListener(new MoveListener());
+
+
         numLives = 3;
         curScore = 0;
 
