@@ -40,7 +40,7 @@ public class Space extends JPanel {
         tEnemy = new TopAlien[COL];
         mEnemy = new MidAlien[NUM_DUP_ROW][COL];
 
-        bEnemy = new BonusAlien(200, 50, 50);
+        bEnemy = new BonusAlien(200, 50, 5);
     }
     //Test the bounds for the aliens 
     public void init() {
@@ -71,7 +71,7 @@ public class Space extends JPanel {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
         int score = 0;
-        BonusAlien b = new BonusAlien(200, 50, 5);
+
 
         for (LowAlien[] a : lEnemy) {
             for (LowAlien am : a) {
@@ -119,7 +119,7 @@ public class Space extends JPanel {
         }
 
         g2.setColor(Color.red);
-        g2.fillPolygon(b);
+        g2.fillPolygon(bEnemy);
 
         //Setting up the Score keeper
         g2.setColor(Color.GREEN);
@@ -159,15 +159,15 @@ public class Space extends JPanel {
     //Makes the bonus alien move from left to right but
     //sadly I couldn't get it to work
     public void updateBonus() {
-        int rand = (int) (Math.random() * 2 + 1);
-        BonusAlien b = new BonusAlien(200, 50, 5);
+        int rand = (int) (Math.random() * 5 + 1);
+
 
         switch (rand) {
             case 1:
-                b.translate(deltaX, 0);
+                bEnemy.translate(deltaX, 0);
                 break;
             case 2:
-                b.translate(-deltaX, 0);
+                bEnemy.translate(-deltaX, 0);
                 break;
         }
     }
@@ -264,8 +264,6 @@ public class Space extends JPanel {
                         || tEnemy[j].isAlive();
             }
 
-
-
             if (lEnemy[i][j].isAlive() && lEnemy[i][j].getY() >= 600) {
                 defeat = true;
             } else if (mEnemy[i][j].isAlive() && mEnemy[i][j].getY() >= 600) {
@@ -296,15 +294,21 @@ public class Space extends JPanel {
     //Puts the bullet back to its position at the muzzle of the ship after
     //intersecting with an alien
     public void updateBullet() {
-
+        //This if statement makes sure the bullet is fired and not at the top of the screen.
+        //This code is ran through everytime the timer for the bullet is fired which is every delay of 5ms.
         if (bullet.getFired() == true && bullet.ypoints[0] > 0) {
-            bullet.translate(0, -deltaY);
+            bullet.translate(0, -deltaY - 4);//Moves the bullet this much every 5ms or what every BULLET_TIME_DELAY is set to.
         }
+
+        //Checks to see if the bullets location is the top of the screen, if so moves the bullet back to the muzzle of the ship
+        //and sets fired to false.
         if (bullet.ypoints[0] < 1) {
             bullet.setFired(false);
             bullet.translate(-bullet.getX() + player.getX()
                     + (player.getWidth() - bullet.getWidth()) / 2, player.getY());
         }
+
+        //Bullet hit boxes for all the aliens
         for (LowAlien[] a : lEnemy) {
             for (LowAlien am : a) {
                 if (bullet.intersects(am.getBounds2D()) && am.isAlive()) {
@@ -338,6 +342,15 @@ public class Space extends JPanel {
                         + (player.getWidth() - bullet.getWidth()) / 2, player.getY()
                         - bullet.getY());
             }
+        }
+
+        if(bullet.intersects(bEnemy.getBounds2D()) && bEnemy.isAlive()){
+            bEnemy.setAlive(false);
+            bEnemy.setColor(Color.BLACK);
+            bullet.setFired(false);
+            bullet.translate(-bullet.getX() + player.getX()
+                    + (player.getWidth() - bullet.getWidth()) / 2, player.getY()
+                    - bullet.getY());
         }
 
     }

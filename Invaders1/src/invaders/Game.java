@@ -27,7 +27,7 @@ public class Game {
     private final int ALIEN_TIME_DELAY = 500;//500
     private final int SHIP_TIME_DELAY = 40;
     private final int BULLET_TIME_DELAY = 5;
-    private final int BONUS_ALIEN_TIME_DELAY = 100;
+    private final int BONUS_ALIEN_TIME_DELAY = 200;
 
     public Game() {
 
