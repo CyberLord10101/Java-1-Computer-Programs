@@ -29,6 +29,7 @@ public class Space extends JPanel {
     private static int laScore = 10;
     private static int maScore = 20;
     private static int taScore = 30;
+    private static int baScore = 50;
 
     private static boolean defeat = false;
     
@@ -92,6 +93,9 @@ public class Space extends JPanel {
                 score += taScore;
             }
         }
+        if(bEnemy.isAlive() == false){
+            score += baScore;
+        }
 
         g2.setColor(Color.WHITE);
 
@@ -118,7 +122,7 @@ public class Space extends JPanel {
             g2.fillPolygon(a);
         }
 
-        g2.setColor(Color.red);
+        g2.setColor(bEnemy.getColor());
         g2.fillPolygon(bEnemy);
 
         //Setting up the Score keeper
@@ -133,7 +137,7 @@ public class Space extends JPanel {
 
         g2.drawString(as.getIterator(), 630, 50);
         //Win if all aliens are defeated lose if they hit the muzzle of your ship
-        if (score == 990) {
+        if (score == 1040) {
             String s1 = new String("You Win");
             Font serif2 = new Font("Serif", Font.PLAIN, 30);
             AttributedString as1 = new AttributedString(s1);

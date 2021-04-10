@@ -4,6 +4,8 @@ package invaders;/*
  * and open the template in the editor.
  */
 
+import java.awt.*;
+
 /**
  *
  * @author student
@@ -11,12 +13,14 @@ package invaders;/*
 public class BonusAlien extends Alien {
     
     private int pWidth;
+
     public BonusAlien(){
         super();
     }
     //Creates the bonus alien in all its unused glory
     public BonusAlien(int x, int y, int u){
         super(x, y, u);
+        setColor(Color.RED);
         pWidth = u;
         npoints = 40;
         xpoints = new int[npoints];
