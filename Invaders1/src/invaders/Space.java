@@ -127,29 +127,27 @@ public class Space extends JPanel {
 
         //Setting up the Score keeper
         g2.setColor(Color.GREEN);
-        String s = new String("Score: " + Integer.toString(score));
+        String s = "Score: " + Integer.toString(score);
 
-        Font serif1 = new Font("Serif", Font.PLAIN, 30);
+        Font serif = new Font("Serif", Font.PLAIN, 30);
 
         AttributedString as = new AttributedString(s);
 
-        as.addAttribute(TextAttribute.FONT, serif1);
+        as.addAttribute(TextAttribute.FONT, serif);
 
         g2.drawString(as.getIterator(), 630, 50);
         //Win if all aliens are defeated lose if they hit the muzzle of your ship
         if (score == 1040) {
-            String s1 = new String("You Win");
-            Font serif2 = new Font("Serif", Font.PLAIN, 30);
+            String s1 = "You Win";
             AttributedString as1 = new AttributedString(s1);
-            as1.addAttribute(TextAttribute.FONT, serif2);
+            as1.addAttribute(TextAttribute.FONT, serif);
             g2.drawString(as1.getIterator(), 330, 340);
 
         } 
         if (getBottomMostAlienYValue()) {
-            String s2 = new String("You Lose");
-            Font serif3 = new Font("Serif", Font.PLAIN, 30);
+            String s2 = "You Lose";
             AttributedString as2 = new AttributedString(s2);
-            as2.addAttribute(TextAttribute.FONT, serif3);
+            as2.addAttribute(TextAttribute.FONT, serif);
             g2.drawString(as2.getIterator(), 330, 340);
         }
 
